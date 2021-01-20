@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function Error() {
   return (
     <div className="App">
       <h2>Not Found!</h2>
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default Error;
