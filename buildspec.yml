@@ -24,8 +24,8 @@ phases:
         #build
         - echo building
         - yarn build
-	- echo ls
-	- ls
+        - echo ls
+        - ls
 artifacts:
   files:
     - "**/*"
