@@ -2,11 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Error from './error';
 import reportWebVitals from './reportWebVitals';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    	<Switch>
+    		<Route path="/error">
+    			<Error />
+    		</Route>
+    		<Route path="/">
+    			<App />
+    		</Route>
+    	</Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
