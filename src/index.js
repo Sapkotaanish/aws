@@ -16,12 +16,8 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
     	<Switch>
-    		<Route path="/error">
-    			<Error />
-    		</Route>
-    		<Route path="/">
-    			<App />
-    		</Route>
+    		<Route exact path="/" component={App} />
+    		<Route path="/" component={error} />
     	</Switch>
     </Router>
   </React.StrictMode>,
